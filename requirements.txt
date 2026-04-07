@@ -1,0 +1,46 @@
+# Voice Inventory System Dependencies
+# Production-ready voice-driven inventory management for warehouse/manufacturing
+
+# Web Framework
+fastapi>=0.104.0
+uvicorn>=0.24.0
+websockets>=12.0
+python-multipart>=0.0.6
+
+# Speech Recognition
+# Use openai-whisper from git for Python 3.12+ compatibility
+# pip install git+https://github.com/openai/whisper.git
+openai-whisper>=20231117
+torch>=2.1.0
+
+# Audio Processing
+librosa>=0.10.1
+noisereduce>=3.0.0
+soundfile>=0.12.1
+scipy>=1.10.0
+
+# Data Validation
+pydantic>=2.5.0
+
+# Numerical Computing
+numpy>=1.24.0
+
+# Database
+aiosqlite==0.19.0
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+httpx==0.25.2
+
+# Utilities
+python-dotenv==1.0.0
+aiofiles==23.2.1
+
+# Rate Limiting
+slowapi==0.1.9
+
+# Caching (optional Redis support)
+redis==5.0.1
+cachetools==5.3.2
