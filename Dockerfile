@@ -40,7 +40,6 @@ ENV PATH=/root/.local/bin:$PATH
 # Copy application code
 COPY backend/ ./backend/
 COPY audio_processing/ ./audio_processing/
-COPY frontend/ ./frontend/
 
 # Create directories for data
 RUN mkdir -p /app/data /app/audio_files /app/failures
