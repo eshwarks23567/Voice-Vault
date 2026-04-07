@@ -44,7 +44,7 @@ class StructuredFieldExtractor:
     STRICT_LOCATION_PATTERN = r'\b([A-Z])-(\d{1,2})\b'
     
     # Confidence threshold for auto-acceptance (balanced for accuracy)
-    CONFIDENCE_THRESHOLD = 0.60
+    CONFIDENCE_THRESHOLD = 0.85
     
     # Word to number mapping
     WORD_TO_NUMBER = {
@@ -77,7 +77,7 @@ class StructuredFieldExtractor:
     
     def __init__(
         self,
-        confidence_threshold: float = 0.50,
+        confidence_threshold: float = CONFIDENCE_THRESHOLD,
         valid_zones: Optional[set] = None
     ):
         """
