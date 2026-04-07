@@ -227,7 +227,7 @@ services:
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `DATABASE_PATH` | `inventory.db` | Path to SQLite database |
-| `WHISPER_MODEL` | `medium` | Whisper model size |
+| `WHISPER_MODEL` | `base` | Whisper model size |
 | `CONFIDENCE_THRESHOLD` | `0.85` | Minimum confidence for auto-accept |
 | `MAX_CONNECTIONS` | `50` | Max WebSocket connections |
 | `LOG_LEVEL` | `INFO` | Logging level |

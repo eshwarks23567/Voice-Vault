@@ -46,7 +46,7 @@ RUN mkdir -p /app/data /app/audio_files /app/failures
 
 # Environment variables
 ENV DATABASE_PATH=/app/data/inventory.db
-ENV WHISPER_MODEL=medium
+ENV WHISPER_MODEL=base
 ENV PYTHONUNBUFFERED=1
 
 # Expose port

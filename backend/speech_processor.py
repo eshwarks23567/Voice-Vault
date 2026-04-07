@@ -559,7 +559,7 @@ class SpeechRecognizer:
 _recognizer_instance: Optional[SpeechRecognizer] = None
 
 
-def get_recognizer(model_name: str = 'medium') -> SpeechRecognizer:
+def get_recognizer(model_name: str = 'base') -> SpeechRecognizer:
     """
     Get or create a cached SpeechRecognizer instance.
     
@@ -567,7 +567,7 @@ def get_recognizer(model_name: str = 'medium') -> SpeechRecognizer:
     loading the model multiple times.
     
     Args:
-        model_name: Whisper model to use (default: 'medium' for good balance)
+        model_name: Whisper model to use (default: 'base' for deployment safety)
     
     Returns:
         SpeechRecognizer instance

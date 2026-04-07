@@ -18,7 +18,7 @@ services:
       - ./failures:/app/failures
     environment:
       - DATABASE_PATH=/app/data/inventory.db
-      - WHISPER_MODEL=${WHISPER_MODEL:-medium}
+      - WHISPER_MODEL=${WHISPER_MODEL:-base}
       - CONFIDENCE_THRESHOLD=${CONFIDENCE_THRESHOLD:-0.85}
     restart: unless-stopped
     healthcheck:

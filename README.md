@@ -36,7 +36,7 @@ A production-ready voice-driven inventory management system designed for warehou
 
 - Python 3.9+
 - CUDA-capable GPU (optional, for faster inference)
-- ~4GB RAM for Whisper medium model
+- ~1GB RAM for Whisper base model
 
 ## Quick Start
 
@@ -148,7 +148,7 @@ Environment variables:
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `DATABASE_PATH` | `inventory.db` | SQLite database path |
-| `WHISPER_MODEL` | `medium` | Whisper model size (tiny/base/small/medium/large) |
+| `WHISPER_MODEL` | `base` | Whisper model size (tiny/base/small/medium/large) |
 | `CONFIDENCE_THRESHOLD` | `0.85` | Minimum confidence for auto-acceptance |
 
 ## Performance Benchmarks
